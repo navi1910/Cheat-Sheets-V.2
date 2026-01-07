@@ -23,3 +23,32 @@ git checkout main
 git push -u origin main
 
 ```
+### Python Virtual Environment
+```
+
+python -m venv myenv
+
+myvenv\Scripts\activate
+
+which python     # macOS or Linux
+where python     # Windows
+
+pip install numpy pandas fastapi
+
+pip freeze > requirements.txt
+
+python app.py
+
+pip install ipykernel
+python -m ipykernel install --user --name=myvenv
+
+deactivate
+
+rm -rf myvenv          # macOS or Linux
+rmdir /s myvenv        # Windows
+
+python -m venv myvenv
+source myvenv/bin/activate   # or Windows activate
+pip install -r requirements.txt
+
+```
