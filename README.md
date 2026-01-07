@@ -44,8 +44,9 @@ python -m ipykernel install --user --name=myvenv
 
 deactivate
 
-rm -rf myvenv          # macOS or Linux
-rmdir /s myvenv        # Windows
+rm -rf myvenv                                # macOS or Linux
+rmdir /s myvenv                              # Windows
+Remove-Item -Recurse -Force Project01_venv   # PoweShell
 
 python -m venv myvenv
 source myvenv/bin/activate   # or Windows activate
